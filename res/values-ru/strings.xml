@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Дневник</string>
+    <string name="add_note">Добавить запись</string>
+    <string name="edit_note">Редактировать запись</string>
+    <string name="save">Сохранить</string>
+    <string name="delete">Удалить</string>
+    <string name="settings">Настройки</string>
+    <string name="title">Заголовок</string>
+    <string name="content">Содержание</string>
+    <string name="no_notes">Записей пока нет. Добавьте первую запись!</string>
+    <string name="language">Язык</string>
+    <string name="english">Английский</string>
+    <string name="russian">Русский</string>
+    <string name="change_language">Изменить язык</string>
+    <string name="note_title_hint">Введите заголовок</string>
+    <string name="note_content_hint">Введите содержание</string>
+</resources>
