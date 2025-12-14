@@ -1,10 +1,25 @@
 <resources>
-    <color name="colorPrimary">#E08D10</color>
-    <color name="colorPrimaryDark">#5E2BED</color>
-    <color name="colorAccent">#D32F2F</color>
-    <color name="cardColor">#E08D10</color>
+    <color name="colorPrimary">#AAAAAA</color>
+    <color name="background">#DDDDDD</color>
+    <color name="AccentBright">#D32F2F</color>
+    <color name="textBright">#212121</color>
+
+    <color name="colorDark">#888888</color>
+    <color name="backgroundDark">#555555</color>
+    <color name="AccentDark">#D32F2F</color>
+    <color name="textDark">#212121</color>
+
+    <color name="colorRetro">#00C9B1</color>
+    <color name="backgroundRetro">#FFEBD7</color>
+    <color name="AccentRetro">#D32F2F</color>
+    <color name="textRetro">#212121</color>
+
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="cardColor">#AAAAAA</color>
     <color name="textColor">#212121</color>
     <color name="hintColor">#757575</color>
-    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="buttonTextColor">#000000</color>
     <color name="darkTextColor">#000000</color>
+
+
 </resources>

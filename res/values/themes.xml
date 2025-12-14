@@ -1,17 +1,25 @@
 <resources>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">#6D45CA</item>
+    </style>
+
+    <style name="bright" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/background</item>
         <item name="colorPrimaryDark">#6D45CA</item>
-        <item name="colorAccent">#B84747</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowLightStatusBar">false</item>
-        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
-        <item name="android:windowTranslucentStatus">false</item>
-        <item name="android:windowTranslucentNavigation">false</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/AccentBright</item>
+    </style>
+
+    <style name = "dark" parent="AppTheme">
+        <item name="colorPrimary">@color/colorDark</item>
+        <item name="android:windowBackground">@color/backgroundDark</item>
+        <item name="colorAccent">@color/AccentDark</item>
+    </style>
+
+    <style name = "retro" parent="AppTheme">
+        <item name="colorPrimary">@color/colorRetro</item>
+        <item name="android:windowBackground">@color/backgroundRetro</item>
+        <item name="colorAccent">@color/AccentRetro</item>
     </style>
 
     <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
@@ -33,7 +41,7 @@
         <item name="android:padding">16dp</item>
         <item name="android:minHeight">48dp</item>
         <item name="android:minWidth">88dp</item>
-        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:background">@color/background</item>
         <item name="android:textColor">@color/buttonTextColor</item>
         <item name="android:textSize">16sp</item>
         <item name="android:gravity">center</item>
@@ -49,4 +57,5 @@
         <item name="android:minHeight">48dp</item>
         <item name="android:padding">12dp</item>
     </style>
+
 </resources>

@@ -3,10 +3,34 @@ package com.example.diary2
 import android.content.Context
 import android.content.res.Configuration
 import android.os.Build
+import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import java.util.Locale
 
 open class BaseActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        applyTheme(ThemeManager.getCurrentTheme())
+        super.onCreate(savedInstanceState)
+    }
+
+    private fun applyTheme(theme: String) {
+        when (theme) {
+            ThemeManager.THEME_DARK -> {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                setTheme(R.style.dark)
+            }
+            ThemeManager.THEME_RETRO -> {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                setTheme(R.style.retro)
+            }
+            else -> {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                setTheme(R.style.bright)
+            }
+        }
+    }
 
     override fun attachBaseContext(newBase: Context) {
         super.attachBaseContext(updateBaseContextLocale(newBase))
@@ -28,8 +52,6 @@ open class BaseActivity : AppCompatActivity() {
         }
         return context
     }
-
-
 
     override fun onResume() {
         super.onResume()

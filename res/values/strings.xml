@@ -14,4 +14,8 @@
     <string name="change_language">Change Language</string>
     <string name="note_title_hint">Enter note title</string>
     <string name="note_content_hint">Enter note content</string>
+    <string name="theme">Theme</string>
+    <string name="dark">Dark</string>
+    <string name="bright">Bright</string>
+    <string name="retro">Retro</string>
 </resources>
