@@ -13,7 +13,9 @@ class DiaryApp : Application() {
     override fun onCreate() {
         super.onCreate()
         NotesManager.initialize(this)
+        ThemeManager.initialize(this)
         setupAppLanguage()
+        applyInitialTheme()
     }
 
     private fun setupAppLanguage() {
@@ -28,5 +30,9 @@ class DiaryApp : Application() {
         val configuration = Configuration(resources.configuration)
         configuration.setLocale(locale)
         resources.updateConfiguration(configuration, resources.displayMetrics)
+    }
+
+    private fun applyInitialTheme() {
+        val theme = ThemeManager.getCurrentTheme()
     }
 }

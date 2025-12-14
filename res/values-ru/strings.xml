@@ -14,4 +14,8 @@
     <string name="change_language">Изменить язык</string>
     <string name="note_title_hint">Введите заголовок</string>
     <string name="note_content_hint">Введите содержание</string>
+    <string name="theme">Тема</string>
+    <string name="dark">Темная</string>
+    <string name="bright">Светлая</string>
+    <string name="retro">Ретро</string>
 </resources>
